@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3600;
+const port = process.env.PORT || 3000;
 const MongooseConnect = require('./DBconnect.js');
 const { User } = require('./models/userModel.js');
 
