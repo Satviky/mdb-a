@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const path = require('path');
 const MongooseConnect = require('./DBconnect.js');
-const { User } = require('./models/userModel.js');
+const { User } = require('./models/Poll_s.js');
 
 // Connect to MongoDB
 MongooseConnect();
