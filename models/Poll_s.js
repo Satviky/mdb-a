@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const AutoIncrement = require('mongoose-sequence')(mongoose);
-const TodoSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     title: {type: String, required: true, default: "New Vote Jan 20"},
     desc: String,
     isDone: Boolean,
@@ -8,6 +8,5 @@ const TodoSchema = new mongoose.Schema({
 });
 
 // TodoSchema.plugin(AutoIncrement, { inc_field: 'vc' });
-const Todo = mongoose.model('Todo', TodoSchema);
-
-module.exports = { Todo };
+const User= mongoose.model('User', UserSchema);
+module.exports= {User};
