@@ -7,6 +7,6 @@ const UserSchema = new mongoose.Schema({
     vc: { type: Number, unique: true }
 });
 
-// TodoSchema.plugin(AutoIncrement, { inc_field: 'vc' });
+UserSchema.plugin(AutoIncrement, { inc_field: 'vc' });
 const User= mongoose.model('User', UserSchema);
 module.exports= {User};
