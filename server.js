@@ -25,7 +25,7 @@ app.get('/c1', async (req, res) => {
         const user = new User({ desc: "Shadowveil Studio" });
         await user.save();
         console.log("Done");
-        res.send("User saved!");
+        res.render('c1');
     } catch (error) {
         console.error('Error saving user:', error);
         res.status(500).send("Error saving user");
@@ -36,7 +36,7 @@ app.get('/c2', async (req, res) => {
         const user = new User({ desc: "Whispering Woods" });
         await user.save();
         console.log("Done");
-        res.send("User saved!");
+        res.render('c2');
     } catch (error) {
         console.error('Error saving user:', error);
         res.status(500).send("Error saving user");
@@ -47,7 +47,7 @@ app.get('/c3', async (req, res) => {
         const user = new User({ desc: "Enigma Studio" });
         await user.save();
         console.log("Done");
-        res.send("User saved!");
+        res.render('c3');
     } catch (error) {
         console.error('Error saving user:', error);
         res.status(500).send("Error saving user");
