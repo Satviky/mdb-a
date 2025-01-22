@@ -224,7 +224,9 @@ li {
     animation: typing 5s infinite;
 }
 
-
+.aa{
+    position:relative;
+}
 @media screen and (max-width: 1022px) {
     .fog {
         display: none;
