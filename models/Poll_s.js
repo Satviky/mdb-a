@@ -5,6 +5,7 @@ const UserSchema = new mongoose.Schema({
     desc: String,
     isDone: Boolean,
     vc: { type: Number, unique: true }
+    timestamp: { type: Date, default: Date.now }
 });
 
 UserSchema.plugin(AutoIncrement, { inc_field: 'vc' });
