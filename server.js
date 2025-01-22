@@ -25,6 +25,7 @@ app.get('/c1', async (req, res) => {
         const user = new User({ desc: "Shadowveil Studio" });
         await user.save();
         console.log("Done");
+        console.log("Vote recorded with timestamp:", user.timestamp);
         res.render('c1');
     } catch (error) {
         console.error('Error saving user:', error);
@@ -36,6 +37,7 @@ app.get('/c2', async (req, res) => {
         const user = new User({ desc: "Whispering Woods" });
         await user.save();
         console.log("Done");
+        console.log("Vote recorded with timestamp:", user.timestamp);
         res.render('c2');
     } catch (error) {
         console.error('Error saving user:', error);
@@ -47,6 +49,7 @@ app.get('/c3', async (req, res) => {
         const user = new User({ desc: "Enigma Studio" });
         await user.save();
         console.log("Done");
+        console.log("Vote recorded with timestamp:", user.timestamp);
         res.render('c3');
     } catch (error) {
         console.error('Error saving user:', error);
