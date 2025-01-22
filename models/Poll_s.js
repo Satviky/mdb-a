@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const AutoIncrement = require('mongoose-sequence')(mongoose);
 const UserSchema = new mongoose.Schema({
-    title: {type: String, required: true, default: "New Vote Jan 21"},
+    title: {type: String, required: true, default: "New Vote Jan 22 @ half past 11"},
     desc: String,
     isDone: Boolean,
     vc: { type: Number, unique: true }
